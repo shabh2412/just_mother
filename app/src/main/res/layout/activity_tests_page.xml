@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Tests_page">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/book_test_heading"
+            android:id="@+id/test_list_heading"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.485"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/list_name"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintTop_toBottomOf="@+id/test_list_heading"
+            android:layout_marginTop="104dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/cbc_test">
+                <ImageView android:layout_width="wrap_content"
+                           android:background="@drawable/cbc_test_btn_background"
+                           android:id="@+id/cbc_img"
+                           android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+                           android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                           android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent" android:contentDescription="@string/cbc"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/more_info_btn"
+                        app:layout_constraintTop_toTopOf="@+id/cbc_img"
+                        app:layout_constraintBottom_toBottomOf="@+id/cbc_img"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbc_more_inf"
+                        android:layout_marginTop="104dp"
+                        app:layout_constraintStart_toStartOf="@+id/cbc_img"
+                        android:layout_marginStart="12dp"
+                />
+                <Button
+                        android:background="@drawable/booknow_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbc_book_btn"
+                        app:layout_constraintStart_toEndOf="@id/cbc_more_inf"
+                        app:layout_constraintTop_toTopOf="@id/cbc_img"
+                        app:layout_constraintBottom_toBottomOf="@id/cbc_img"
+                        app:layout_constraintEnd_toEndOf="@id/cbc_img"
+                        app:layout_constraintHorizontal_bias="0.605" app:layout_constraintVertical_bias="0.91"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/tsh_test">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/tsh_test_btn_background"
+                        android:id="@+id/tsh_img" android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.482" android:layout_marginStart="8dp"
+                        app:layout_constraintVertical_bias="0.0" android:contentDescription="@string/tsh"/>
+                <Button
+                        android:background="@drawable/more_info_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/tsh_more_inf"
+                        app:layout_constraintStart_toStartOf="@+id/tsh_img" android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.93"/>
+                <Button
+                        android:background="@drawable/booknow_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tsh_more_info"
+                        app:layout_constraintStart_toEndOf="@id/tsh_more_inf"
+                        app:layout_constraintEnd_toEndOf="@id/tsh_img"
+                        app:layout_constraintTop_toTopOf="@id/tsh_img"
+                        app:layout_constraintBottom_toBottomOf="@id/tsh_img"
+                        app:layout_constraintHorizontal_bias="0.6" app:layout_constraintVertical_bias="0.934"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/rbs_test">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/rbs_test_btn_background"
+                        android:id="@+id/rbs_img" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" android:contentDescription="@string/rbs"/>
+                <Button
+                        android:background="@drawable/more_info_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbs_more_inf"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="@id/rbs_img"
+                        app:layout_constraintStart_toStartOf="@+id/rbs_img"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="@+id/rbs_img"
+                        app:layout_constraintVertical_bias="0.931"/>
+                <Button
+                        android:background="@drawable/booknow_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/rbs_img"
+                        app:layout_constraintTop_toTopOf="@+id/rbs_img"
+                        app:layout_constraintEnd_toEndOf="@+id/rbs_img"
+                        app:layout_constraintStart_toEndOf="@id/rbs_more_inf"
+                        android:layout_marginBottom="16dp"
+                        android:id="@+id/rbs_book_btn"
+                        app:layout_constraintVertical_bias="0.936" app:layout_constraintHorizontal_bias="0.51"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/hiv_test"
+            >
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/hiv_test_btn_background"
+                        android:id="@+id/hiv_img"
+                        app:layout_constraintEnd_toEndOf="@id/hiv_test"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintStart_toStartOf="@id/hiv_test"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="@id/hiv_test"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="@id/hiv_test"
+                        android:contentDescription="@string/hiv"/>
+                <Button
+                        android:background="@drawable/more_info_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hiv_more_inf"
+                        app:layout_constraintStart_toStartOf="@+id/hiv_img"
+                        android:layout_marginTop="113dp"
+                        app:layout_constraintTop_toTopOf="@+id/hiv_img"
+                        app:layout_constraintBottom_toBottomOf="@id/hiv_img"
+                        app:layout_constraintEnd_toStartOf="@id/hiv_book_btn"
+                        app:layout_constraintHorizontal_bias="0.301"
+                        app:layout_constraintVertical_bias="0.386"/>
+                <Button
+                        android:background="@drawable/booknow_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hiv_book_btn"
+                        app:layout_constraintEnd_toEndOf="@+id/hiv_img"
+                        android:layout_marginEnd="44dp"
+                        app:layout_constraintTop_toTopOf="@id/hiv_img"
+                        app:layout_constraintBottom_toBottomOf="@id/hiv_img"
+                        app:layout_constraintStart_toStartOf="@id/hiv_img"
+                        app:layout_constraintVertical_bias="0.828" app:layout_constraintHorizontal_bias="0.962"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/urm_test">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/urm_test_btn_background"
+                        android:id="@+id/urm_img"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:contentDescription="@string/urm"/>
+                <Button
+                        android:background="@drawable/more_info_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/urm_more_inf"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="@id/urm_img"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="@id/urm_img"
+                        app:layout_constraintStart_toStartOf="@id/urm_img"
+                        android:layout_marginStart="28dp"
+                        app:layout_constraintVertical_bias="0.931"/>
+                <Button
+                        android:background="@drawable/booknow_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/urm_book_btn"
+                        app:layout_constraintStart_toEndOf="@+id/urm_more_inf"
+                        app:layout_constraintEnd_toEndOf="@+id/urm_img"
+                        app:layout_constraintBottom_toBottomOf="@id/urm_img"
+                        app:layout_constraintTop_toTopOf="@id/urm_img"
+                        android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.829"
+                        app:layout_constraintHorizontal_bias="0.522"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/eop">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/end_of_the_pg_img"
+                        android:id="@+id/eop_img"
+                        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:contentDescription="@string/end_text" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginBottom="8dp"/>
+                <Button
+                        android:background="@drawable/next_tpage_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/next_tpg_btn"
+                        app:layout_constraintEnd_toEndOf="@+id/eop_img"
+                        app:layout_constraintStart_toStartOf="@+id/eop_img"
+                        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.959"
+                        android:layout_marginBottom="16dp" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
